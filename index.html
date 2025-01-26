@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Search by Akhtar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Word Search by Akhtar</h1>
+
+    <div class="settings">
+      <!-- Search List Dropdown -->
+      <div>
+        <label for="search-list">Select Search List</label>
+        <select id="search-list">
+          <option value="" disabled selected>Loading...</option>
+        </select>
+      </div>
+
+      <!-- Search Engine Dropdown -->
+      <div>
+        <label for="search-engine">Select Search Engine</label>
+        <select id="search-engine">
+          <option value="Google">Google</option>
+          <option value="Bing" selected>Bing</option>
+          <option value="Yahoo">Yahoo</option>
+        </select>
+      </div>
+
+      <!-- Delay Range Inputs -->
+      <div>
+        <label for="delay-start">Delay Start (seconds)</label>
+        <input type="number" id="delay-start" value="5" min="0" step="0.1">
+      </div>
+      <div>
+        <label for="delay-end">Delay End (seconds)</label>
+        <input type="number" id="delay-end" value="7" min="0" step="0.1">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="start-button">Start</button>
+      <button id="stop-button" disabled>Stop</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
